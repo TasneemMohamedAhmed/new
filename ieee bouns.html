@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reverse Number</title>
+    <script>
+        function reverseNumber(n) {
+            const reversedNumber = parseInt(n.toString().split('').reverse().join(''));
+            return reversedNumber;
+        }
+        function displayResults() {
+            const example1 = reverseNumber(123456789);
+            const example2 = reverseNumber(45610200);
+            
+            document.getElementById("result1").textContent = "Ex1 Output: " + example1;
+            document.getElementById("result2").textContent = "Ex2 Output: " + example2;
+        }
+    </script>
+</head>
+<body onload="displayResults()">
+    <h1>Reverse Number Function</h1>
+    <div id="result1"></div>
+    <div id="result2"></div>
+</body>
+</html>
